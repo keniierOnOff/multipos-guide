@@ -244,12 +244,12 @@
   <h1>Varias cajas.<br>Un <span class="hl">mismo negocio</span>.</h1>
   <p class="lede">MultiPOS es la forma en que <b>Sistemas Internos</b> administra, desde <b>Try Admin</b>, a un
   cliente que opera con más de una caja registradora bajo el mismo negocio: la negociación se cierra en
-  Bitrix24, Tiendas On arma las plataformas en segundo plano, y todo el control — clientes, facturación,
+  Bitrix24, Tiendas On Esencial arma las plataformas en segundo plano, y todo el control — clientes, facturación,
   novedades — vive en Try Admin.</p>
   <div class="stat-row">
     <div class="stat-chip"><div class="num">30</div><div class="lbl">cajas adicionales como máximo por negocio</div></div>
     <div class="stat-chip"><div class="num">1</div><div class="lbl">correo de acceso, enviado al asignar la caja principal</div></div>
-    <div class="stat-chip"><div class="num">3</div><div class="lbl">sistemas involucrados: Bitrix24, Tiendas On y Try Admin</div></div>
+    <div class="stat-chip"><div class="num">3</div><div class="lbl">sistemas involucrados: Bitrix24, Tiendas On Esencial y Try Admin</div></div>
   </div>
 </div>
 
@@ -268,7 +268,7 @@
     </div>
     <p class="funnel-caption reveal">Antes de que exista una sola caja, un <b>prospecto</b> se convierte en <b>compañía</b>
     dentro de Bitrix24, y esa compañía negocia los planes que va a contratar — de caja principal o de caja
-    adicional. Solo cuando esa negociación queda <b>ganada</b> arranca todo lo que sigue en Tiendas On y Try Admin.</p>
+    adicional. Solo cuando esa negociación queda <b>ganada</b> arranca todo lo que sigue en Tiendas On Esencial y Try Admin.</p>
   </div>
 </section>
 
@@ -340,7 +340,7 @@
     <div class="sec-head reveal">
       <div class="sec-kicker">Paso a paso</div>
       <h2>El recorrido completo, de la negociación a la operación</h2>
-      <p class="sec-sub">Siete pasos, tres sistemas. Bitrix24 origina, Tiendas On ejecuta en segundo plano, y
+      <p class="sec-sub">Seis pasos, tres sistemas. Bitrix24 origina, Tiendas On Esencial ejecuta en segundo plano, y
       Try Admin es donde tu equipo trabaja todos los días.</p>
     </div>
 
@@ -364,14 +364,14 @@
         <div class="step-badge">2</div>
         <div class="step-card">
           <div class="step-text">
-            <span class="lane-tag lane-tiendas">Tiendas On</span>
+            <span class="lane-tag lane-tiendas">Tiendas On Esencial</span>
             <h3>Se arman las plataformas, listas para operar</h3>
             <p>Automáticamente: la caja principal recibe el sufijo <b>-1</b> y el precargue de productos; las
             adicionales continúan el consecutivo (-2, -3…).</p>
           </div>
           <div class="step-media">
             <!-- Video 2: inserción de SharePoint. --><div class="video-loop" aria-label="Video del paso 2"><iframe src="https://onoffcolombia-my.sharepoint.com/personal/kenier_morales_onoff_com_co/_layouts/15/embed.aspx?UniqueId=a643f85d-d5de-4466-b415-f2c1a7dcfced&amp;embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&amp;referrer=StreamWebApp&amp;referrerScenario=EmbedDialog.Create" allow="autoplay; fullscreen" allowfullscreen title="Se arman las plataformas, listas para operar.mp4"></iframe></div>
-            <div class="shot-label"><b>Tiendas On · Plataformas armadas</b><span>Cajas creadas con su sufijo y precargue de productos listos.</span></div>
+            <div class="shot-label"><b>Tiendas On Esencial · Plataformas armadas</b><span>Cajas creadas con su sufijo y precargue de productos listos.</span></div>
           </div>
         </div>
       </div>
@@ -379,7 +379,7 @@
         <div class="step-badge">3</div>
         <div class="step-card">
           <div class="step-text">
-            <span class="lane-tag lane-tiendas">Tiendas On</span>
+            <span class="lane-tag lane-tiendas">Tiendas On Esencial</span>
             <h3>Se asigna la credencial de acceso</h3>
             <p>Se envía un único correo con las credenciales del SuperAdmin a la caja principal — no se
             reenvía después, ni con cajas adicionales nuevas.</p>
@@ -479,11 +479,10 @@
       </div>
 
       <div class="rule-card">
-        <h3><span class="rule-icon"><svg viewBox="0 0 24 24" fill="none" stroke="var(--brand-dark)" stroke-width="2" stroke-linecap="round"><rect x="4" y="7" width="16" height="12" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg></span>Apertura y cupos</h3>
+        <h3><span class="rule-icon"><svg viewBox="0 0 24 24" fill="none" stroke="var(--brand-dark)" stroke-width="2" stroke-linecap="round"><rect x="4" y="7" width="16" height="12" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg></span>Límite de cajas adicionales</h3>
         <ul class="rule-list">
-          <li><span class="rule-mark">✅</span><span>El cupo depende de las cajas <b>contratadas vigentes</b> — es un cálculo dinámico, no fijo.</span></li>
-          <li><span class="rule-mark">✅</span><span>Inactivar una caja <b>libera su cupo</b> para abrir otra.</span></li>
-          <li><span class="rule-mark">⚠️</span><span>Sin cupo, el mensaje exacto es: "No cuentas con planes disponibles para abrir una nueva caja."</span></li>
+          <li><span class="rule-mark">✅</span><span>Un negocio permite un máximo de <b>30 cajas adicionales</b>.</span></li>
+          <li><span class="rule-mark">🚫</span><span>Si una negociación contiene más de 30 cajas adicionales, el sistema crea únicamente las <b>30 permitidas</b>; las cajas que excedan este límite <b>no se crean</b>.</span></li>
         </ul>
       </div>
 
@@ -518,7 +517,7 @@
       <div class="rule-card scope">
         <h3><span class="rule-icon" style="background:var(--line-soft)"><svg viewBox="0 0 24 24" fill="none" stroke="var(--ink-soft)" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M4.9 4.9l14.2 14.2"/></svg></span>Fuera de alcance de MultiPOS</h3>
         <ul class="rule-list">
-          <li><span class="rule-mark">🚫</span><span>Un cliente con <b>más de un "Negocio"</b> es la funcionalidad "Multipunto" — no se prueba aquí.</span></li>
+          <li><span class="rule-mark">🚫</span><span><b>Funcionalidad futura – Multipunto:</b> los escenarios en los que un cliente tenga más de un "Negocio" no hacen parte del alcance actual de MultiPOS. Estos escenarios serán gestionados mediante la funcionalidad <b>Multipunto</b>, correspondiente a un desarrollo posterior.</span></li>
           <li><span class="rule-mark">🚫</span><span><b>SAP</b> cumple su mismo rol de siempre — crear el cliente y generar la facturación legal/electrónica — pero eso se valida junto con <b>Cartera</b>, no dentro de esta suite.</span></li>
         </ul>
       </div>
@@ -549,21 +548,15 @@
       </div>
 
       <div class="qa-card">
-        <p class="qa-q">¿Inactivar una caja libera cupo para abrir otra?</p>
-        <div class="qa-row before"><span class="qa-tag before">Antes</span><span>No estaba claro si el cupo era fijo o dinámico.</span></div>
-        <div class="qa-row after"><span class="qa-tag after">Ahora</span><span>Sí. El cupo se calcula sobre las cajas contratadas vigentes en ese momento.</span></div>
-      </div>
-
-      <div class="qa-card">
         <p class="qa-q">¿Cuántas cajas adicionales puede tener un negocio?</p>
         <div class="qa-row before"><span class="qa-tag before">Antes</span><span>No había un límite documentado.</span></div>
-        <div class="qa-row after"><span class="qa-tag after">Ahora</span><span>Hasta 30. La caja adicional número 31 no queda asociada.</span></div>
+        <div class="qa-row after"><span class="qa-tag after">Ahora</span><span>Hasta 30. Si la negociación contiene 31 o más cajas adicionales, el sistema crea únicamente las primeras 30; las excedentes no se crean.</span></div>
       </div>
 
       <div class="qa-card">
         <p class="qa-q">¿Un cliente puede tener dos "Negocios" bajo MultiPOS?</p>
         <div class="qa-row before"><span class="qa-tag before">Antes</span><span>Era una duda abierta sobre numeración cruzada entre negocios.</span></div>
-        <div class="qa-row after"><span class="qa-tag after">Ahora</span><span>No aplica aquí: ese escenario pertenece a la funcionalidad "Multipunto".</span></div>
+        <div class="qa-row after"><span class="qa-tag after">Ahora</span><span>No dentro del alcance actual de MultiPOS. Este escenario será contemplado en <b>Multipunto</b>, funcionalidad correspondiente a un desarrollo futuro.</span></div>
       </div>
 
       <div class="qa-card">
@@ -647,28 +640,47 @@
 
 (function(){
   var embeds = {
-    'Se cierra (gana) la negociación.mp4': 'https://onoffcolombia.sharepoint.com/sites/ReglasdeNegocioSistemasInternos/_layouts/15/embed.aspx?UniqueId=6021a74b-bee1-469c-b9f9-b4c7b5ae2068&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create',
-    'Se arman las plataformas, listas para operar.mp4': 'https://onoffcolombia-my.sharepoint.com/personal/kenier_morales_onoff_com_co/_layouts/15/embed.aspx?UniqueId=a643f85d-d5de-4466-b415-f2c1a7dcfced&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create',
-    'Se asigna la credencial de acceso.mp4': 'https://onoffcolombia-my.sharepoint.com/personal/kenier_morales_onoff_com_co/_layouts/15/embed.aspx?UniqueId=d8058c4b-b5d0-4c29-91f0-cf513c838bd2&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create',
-    'Cada caja valida su cupo al abrirse.mp4': 'https://onoffcolombia-my.sharepoint.com/personal/kenier_morales_onoff_com_co/_layouts/15/embed.aspx?UniqueId=095c9da9-f777-46b5-9dd2-bbf230b8419b&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create',
-    'Se consulta la ficha del cliente.mp4': 'https://onoffcolombia-my.sharepoint.com/personal/kenier_morales_onoff_com_co/_layouts/15/embed.aspx?UniqueId=c90cdb7e-4094-40f0-a83c-50c6e6c69055&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create',
-    'Se activa y consulta la facturación.mp4': 'https://onoffcolombia-my.sharepoint.com/personal/kenier_morales_onoff_com_co/_layouts/15/embed.aspx?UniqueId=9852b3d9-ed83-4718-8bbb-fb4db864fbe8&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create',
-    'Se gestionan las novedades.mp4': 'https://onoffcolombia-my.sharepoint.com/personal/kenier_morales_onoff_com_co/_layouts/15/embed.aspx?UniqueId=8994d7e1-7927-4a17-a805-014b039bcb8b&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create'
+    'Se cierra (gana) la negociación.mp4': 'https://onoffcolombia.sharepoint.com/:v:/s/ReglasdeNegocioSistemasInternos/IQBLpyFg4b6cRrn5tMe1riBoAd7JnMlq5ljyQ4qDup0UMzY?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=RNAl27',
+    'Se arman las plataformas, listas para operar.mp4': 'https://onoffcolombia.sharepoint.com/:v:/s/ReglasdeNegocioSistemasInternos/IQBUtzBNQP5ETq5GJlE7nt2KAcuR7ExjUkbRCGwS-DDRqxs?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=7qeNeg',
+    'Se asigna la credencial de acceso.mp4': 'https://onoffcolombia.sharepoint.com/:v:/s/ReglasdeNegocioSistemasInternos/IQBa4oGDoF2-SIbRMrP1TC8mAco_qLynm9xs6KR_yPgSR5g?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=X70iGE',
+    'Cada caja valida su cupo al abrirse.mp4': 'https://onoffcolombia.sharepoint.com/:v:/s/ReglasdeNegocioSistemasInternos/IQDPmQPZP5rVR5b7o_IM6Zz1ASRnnDrqW8o-bkFippVTMUg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=glLMiA',
+    'Se consulta la ficha del cliente.mp4': 'https://onoffcolombia.sharepoint.com/:v:/s/ReglasdeNegocioSistemasInternos/IQBPp--8Av5eSqygVenGCRP4ASEzOemH8tqBc8B-9Cd1Cws?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=Gtd2nQ',
+    'Se gestionan las novedades.mp4': 'https://onoffcolombia.sharepoint.com/:v:/s/ReglasdeNegocioSistemasInternos/IQA4ufTVY-YxR5BP8guvVD4TAS5tWrKxMW9JTi5cj3KfhNE?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=jjm1hU',
+    'Se activa y consulta la facturación.mp4': 'https://onoffcolombia.sharepoint.com/:v:/s/ReglasdeNegocioSistemasInternos/IQBHjMhHZr-PT5aH4XQYrn6qAePwWvN0Wl8ncrPubOdU1lg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=Qyn66z'
   };
+
   document.querySelectorAll('.video-loop iframe').forEach(function(frame){
-    if(embeds[frame.title]) frame.src = embeds[frame.title];
+    if (embeds[frame.title]) {
+      var directUrl = embeds[frame.title];
+      var isSharePointDirect = directUrl.indexOf('sharepoint.com/:v:/') !== -1;
+      var isLoginRedirect = directUrl.indexOf('login.microsoftonline.com') !== -1;
+
+      if (isSharePointDirect || isLoginRedirect) {
+        var link = document.createElement('a');
+        link.className = 'video-link';
+        link.href = directUrl;
+        link.target = '_blank';
+        link.rel = 'noopener';
+        link.textContent = 'Abrir video en SharePoint';
+        frame.parentNode.replaceChild(link, frame);
+        return;
+      }
+
+      frame.src = directUrl;
+    }
   });
 })();
 
 (function(){
   document.querySelectorAll('.video-loop iframe').forEach(function(frame){
-    if(frame.src.indexOf('/:v:/g/') === -1) return;
+    var src = frame.src || '';
+    if (src.indexOf('sharepoint.com/:v:/') === -1 && src.indexOf('login.microsoftonline.com') === -1) return;
     var link = document.createElement('a');
     link.className = 'video-link';
-    link.href = frame.src;
+    link.href = src;
     link.target = '_blank';
     link.rel = 'noopener';
-    link.textContent = 'Abrir video en OneDrive';
+    link.textContent = 'Abrir video en SharePoint';
     frame.parentNode.replaceChild(link, frame);
   });
 })();
