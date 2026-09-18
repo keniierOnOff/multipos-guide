@@ -610,28 +610,29 @@
     'Se gestionan las novedades.mp4': 'https://onoffcolombia.sharepoint.com/:v:/s/ReglasdeNegocioSistemasInternos/IQA4ufTVY-YxR5BP8guvVD4TAS5tWrKxMW9JTi5cj3KfhNE?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=jjm1hU'
   };
 
+  function replaceWithLink(frame, url) {
+    var link = document.createElement('a');
+    link.className = 'video-link';
+    link.href = url;
+    link.target = '_blank';
+    link.rel = 'noopener';
+    link.textContent = 'Abrir video en SharePoint';
+    frame.parentNode.replaceChild(link, frame);
+  }
+
   document.querySelectorAll('.video-loop iframe').forEach(function(frame){
-    var title = frame.title || '';
-    var targetUrl = embeds[title];
+    var targetUrl = embeds[frame.title] || frame.src;
     if (!targetUrl) return;
 
-    if (targetUrl.indexOf('sharepoint.com/:v:/') !== -1) {
-      frame.src = targetUrl;
-      return;
-    }
-
-    if (targetUrl.indexOf('login.microsoftonline.com') !== -1) {
-      var link = document.createElement('a');
-      link.className = 'video-link';
-      link.href = targetUrl;
-      link.target = '_blank';
-      link.rel = 'noopener';
-      link.textContent = 'Abrir video en SharePoint';
-      frame.parentNode.replaceChild(link, frame);
-      return;
-    }
-
     frame.src = targetUrl;
+
+    setTimeout(function(){
+      var doc = null;
+      try { doc = frame.contentDocument || (frame.contentWindow && frame.contentWindow.document); } catch (e) {}
+      if (!doc || !doc.body || doc.body.innerHTML === '' || doc.URL === 'about:blank') {
+        replaceWithLink(frame, targetUrl);
+      }
+    }, 1800);
   });
 })();
 </script>
